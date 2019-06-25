@@ -14,9 +14,8 @@ If you have an idea and know how to realize it, please feel free to fork my repo
 
 Requirements:
 
-Root
-Kernel with I/O accounting enabled
-The following configs must be set:
+1. Root and Kernel with I/O accounting enabled
+2. The following configs must be set:
 CONFIG_TASKSTATS
 CONFIG_TASK_IO_ACCOUNTING
 CONFIG_TASK_XACCT
@@ -25,11 +24,14 @@ CONFIG_TASK_DELAY_ACCT
 If your kernel does not support I/O accounting, you may politely ask your kernel dev to enable it in his defconfig. But always remember, it's his call and you have to accept whatever he's gonna do. There is nothing you can do about it.
 
 
-Usage
+Usage:
+
 You can execute the script from wherever you like, be it your sdcard, data partition or system partition. But for easier use, I would recommend you to place it in your /system/bin folder.
 
 (for this example, I assume you've placed it in /system/bin)
+
 To run it, you must be root (---> $su )
+
 Then you can run the actual script
 Code:
 iotop.sh
