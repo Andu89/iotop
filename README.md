@@ -12,7 +12,8 @@ First up, the script is not yet as powerful as the one for PCs. It's still WIP b
 If you have an idea and know how to realize it, please feel free to fork my repo and create a pull request. I will most likely be merging it happily.
 
 
-Requirements
+Requirements:
+
 Root
 Kernel with I/O accounting enabled
 The following configs must be set:
@@ -32,22 +33,23 @@ To run it, you must be root (---> $su )
 Then you can run the actual script
 Code:
 iotop.sh
+
 You don't like the units being KB? How about MB?
 Code:
 iotop.sh -m
+
 Still not what you want? Bytes then?
 Code:
 iotop.sh -b
+
 Found your desired unit? Great! But those entries with no I/O activity are quite annoying, right? So let's get rid of them!
 Code:
 iotop.sh --only
+
 You don't want to see all those empty entries, but still want to know how many were skipped? No problem:
 Code:
 iotop-sh --only --show-skips
+
 Still need some help? Check this:
 Code:
 iotop.sh --help
-
-Download
-So, in case you still want to know where to get it from, the github project is located HERE
-The raw script can be found HERE
